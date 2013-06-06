@@ -81,7 +81,7 @@ function filterAll()
 };
 
 function SundialsListCtrl($scope) {
-	
+	alert("laenge: "+filterdata);
         $scope.sundials = filterdata;
    };
 
