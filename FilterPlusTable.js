@@ -78,8 +78,8 @@ function filterAll()
 
 function SundialsListCtrl($scope, $http) {
 
-    $http.get('https://dl.dropboxusercontent.com/u/103327358/file1.json').success(function (data) {
-        $scope.sundials = data;
-    });
+    //$http.get('https://dl.dropboxusercontent.com/u/103327358/file1.json').success(function (data) {
+        $scope.sundials = filterdata;
+    //});
 }
 
