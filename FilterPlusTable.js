@@ -4,7 +4,7 @@ var Material=[];
 var Datum=[];
 var Typ=[];
 var CheckMaterial=[];
-
+
 function filterLogicMaterial(checkMaterial,data, material)
 {
     
@@ -79,5 +79,5 @@ function SundialsListCtrl($scope) {
     //$http.get('https://dl.dropboxusercontent.com/u/103327358/file1.json').success(function (data) {
         $scope.sundials = filterdata;
     //});
-}
+};
 
