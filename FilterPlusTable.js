@@ -4,7 +4,7 @@ var Material=[];
 var Datum=[];
 var Typ=[];
 var CheckMaterial=[];
-var filterdata=[];
+var filterdata=[{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
