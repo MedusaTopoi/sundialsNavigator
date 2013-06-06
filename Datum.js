@@ -1,4 +1,4 @@
-function datumSelection()
+function datumSelection(data)
 {
 
 //$('#filterDatum').show();
