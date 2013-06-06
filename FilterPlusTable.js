@@ -71,13 +71,13 @@ function filterAll()
     console.log("Typ:("+Typ+") & Material("+Material+"): "+filterTypMaterial.length);
     console.log("Material("+Material+") & Datum("+Datum+"): "+filterDatumMaterial.length);
     console.log("Datum("+Datum+") & Typ("+Typ+"): "+filterDatumTyp.length);
-    alert(" function "+filterdata.length);
+    
     SundialsListCtrl(filterdata);
 };
 
 
 
-function SundialsListCtrl($scope) {
+function SundialsListCtrl($scope, filterdata) {
 
 	
     //$http.get('https://dl.dropboxusercontent.com/u/103327358/file1.json').success(function (data) {
