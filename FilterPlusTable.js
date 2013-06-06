@@ -75,7 +75,7 @@ function filterAll()
 
 
 function SundialsListCtrl($scope, $http) {
-    $http.get('https://dl.dropboxusercontent.com/u/103327358/sundials.json').success(function (data) {
+    $http.get('filterdata').success(function (data) {
         $scope.sundials = data;
     });
 }
