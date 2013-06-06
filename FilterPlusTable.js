@@ -75,13 +75,8 @@ function filterAll()
     SundialsListCtrl(filterdata);
 };
 
-
-
 function SundialsListCtrl($scope, filterdata) {
-
-	
-    //$http.get('https://dl.dropboxusercontent.com/u/103327358/file1.json').success(function (data) {
         $scope.sundials = filterdata;
-    //});
+   
 };
 
