@@ -58,6 +58,9 @@ function filterAll()
 		{filterdata.push(data[d]);} 
 	};
     
+   
+   
+   
     console.log("neuer Filter++++++++++++++++++");
     console.log("Laenge der SundialsDatenbank im Filter: "+data.length);
     console.log("gesamter Filter (Material,Typ,Datum): "+filterdata.length);
@@ -71,6 +74,10 @@ function filterAll()
 };
 
 
-
+function SundialsListCtrl($scope, $http) {
+    $http.get('https://dl.dropboxusercontent.com/u/103327358/sundials.json').success(function (data) {
+        $scope.sundials = data;
+    });
+}
 
 
