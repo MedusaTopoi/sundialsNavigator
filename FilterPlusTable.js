@@ -4,7 +4,7 @@ var CheckTyp=[];
 var Material=[];
 var Datum=[];
 var Typ=[];
-var Filterdata=[{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];               ;
+//var Filterdata=[{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];               ;
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
@@ -58,8 +58,8 @@ function filterAll()
 	    if((CheckMaterial[d]!=-1 && CheckDatum[d]!=-1 && CheckTyp[d]!=-1
 		&& CheckMaterial[d]==CheckDatum[d] &&  CheckMaterial[d]==CheckTyp[d]))
 		{filterdata.push(data[d]);
-		Filterdata.push({ID: data[d].ID, dating: data[d].dating, material: data[d].material,
-		dialface_shape: data[d].dialface_shape, site: data[d].site, location: data[d].location});		
+		//Filterdata.push({ID: data[d].ID, dating: data[d].dating, material: data[d].material,
+		//dialface_shape: data[d].dialface_shape, site: data[d].site, location: data[d].location});		
 		} 
 	};
     
