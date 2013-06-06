@@ -74,10 +74,12 @@ function filterAll($scope)
     	console.log("Typ:("+Typ+") & Material("+Material+"): "+filterTypMaterial.length);
     	console.log("Material("+Material+") & Datum("+Datum+"): "+filterDatumMaterial.length);
     	console.log("Datum("+Datum+") & Typ("+Typ+"): "+filterDatumTyp.length);
-    	filterdata = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
+    
     	//filterdata.push({"ID":data[0].ID, "dating":data[0].dating});
 	//$scope.sundials = filterdata;
 };
+
+        filterdata = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
 
 function SundialsListCtrl($scope) {
 	alert("laenge: "+filterdata.length);
