@@ -32,7 +32,7 @@ function filterLogicTyp(checkTyp,data, typ)
     filterAll(CheckTyp);
 
 };
-function filterAll($scope)
+function filterAll()
 {
     var filterdata=[];
     var filterDatum=[];
@@ -61,8 +61,9 @@ function filterAll($scope)
 	    //full trigger-------------------------------------------------
 	    if((CheckMaterial[d]!=-1 && CheckDatum[d]!=-1 && CheckTyp[d]!=-1
 		&& CheckMaterial[d]==CheckDatum[d] &&  CheckMaterial[d]==CheckTyp[d]))
-		{filterdata.push(data[d]);
-		
+		{
+			//filterdata.push(data[d]);
+		filterdata = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
 		} 
 	};
     
@@ -77,15 +78,15 @@ function filterAll($scope)
     	console.log("Datum("+Datum+") & Typ("+Typ+"): "+filterDatumTyp.length);
         //filterdata.push({"ID":data[0].ID, "dating":data[0].dating});
 	
-};
+//};
 
-        filterdata = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
+        
 	//Filterdata=filterdata;
 
 
 	function SundialsListCtrl($scope) {
 	alert("laenge: "+filterdata.length);
 	$scope.sundials = filterdata;
-   
+	};
    };
 
