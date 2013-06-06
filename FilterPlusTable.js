@@ -80,8 +80,9 @@ function filterAll()
 };
 
 function SundialsListCtrl($scope) {
-	alert("filterdata "+filterdata)
-        //$scope.sundials = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
-   	$scope.sundials = filterdata;
+	
+        filterdata = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
+   	alert("filterdata "+filterdata);
+   	//$scope.sundials = filterdata;
    };
 
