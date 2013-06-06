@@ -4,8 +4,7 @@ var CheckTyp=[];
 var Material=[];
 var Datum=[];
 var Typ=[];
-var Filterdata=[{ID: "1", dating: "1", material: "1",
-		dialface_shape: "1", site: "1", location: "1"}];
+var Filterdata=[{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}               ;
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
