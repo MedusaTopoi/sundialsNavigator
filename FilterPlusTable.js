@@ -79,8 +79,9 @@ function filterAll()
     	SundialsListCtrl(filterdata);
 };
 
-function SundialsListCtrl($scope) {
+function SundialsListCtrl($scope, filterdata) {
 	alert("laenge: "+filterdata.length);
         $scope.sundials = filterdata;
+   
    };
 
