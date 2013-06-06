@@ -1,9 +1,9 @@
-var CheckMaterial=[];
 var CheckDatum=[];
 var CheckTyp=[];
 var Material=[];
 var Datum=[];
 var Typ=[];
+var CheckMaterial=[];
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
