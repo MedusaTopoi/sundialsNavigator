@@ -45,7 +45,7 @@ function filterAll()
     for(var d=0;d<528; d++)
   {
   	
-  	    filterdata.push({"ID":data[d].ID, "dating":data[d].dating});
+  	    
   	
 	    //single trigger-------------------------------------------------
 	    if(CheckDatum[d]!=-1) {filterDatum.push(data[d]);}
@@ -79,6 +79,9 @@ function filterAll()
 };
 
 function SundialsListCtrl($scope) {
+	
+	
+	filterdata.push({"ID":data[0].ID, "dating":data[0].dating});
         //$scope.sundials = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
    	$scope.sundials = filterdata;
    };
