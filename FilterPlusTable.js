@@ -1,4 +1,3 @@
-
 var CheckMaterial=[];
 var CheckDatum=[];
 var CheckTyp=[];
@@ -10,7 +9,7 @@ var Typ=[];
 function filterLogicMaterial(checkMaterial,data, material)
 {
     
-    var svg = d3.select("#filterLogikMaterial").append("svg:svg");
+    //var svg = d3.select("#filterLogikMaterial").append("svg:svg");
     CheckMaterial=checkMaterial;
     Material=material;
     filterAll(CheckMaterial);
