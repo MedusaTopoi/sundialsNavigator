@@ -76,7 +76,7 @@ function filterAll()
 };
 
 
-function SundialsListCtrl($scope, $http) {
+function SundialsListCtrl($scope, $http, Filterdata) {
 	alert("new table: "+Filterdata.length)
     $http.get('Filterdata').success(function (data) {
         $scope.sundials = data;
