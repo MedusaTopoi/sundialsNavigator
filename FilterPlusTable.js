@@ -1,15 +1,16 @@
-var CheckMaterial=[];
 var CheckDatum=[];
 var CheckTyp=[];
 var Material=[];
 var Datum=[];
 var Typ=[];
+var CheckMaterial=[];
+
 //var Filterdata=[{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];               ;
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
     
-    //var svg = d3.select("#filterLogikMaterial").append("svg:svg");
+    var svg = d3.select("#filterLogikMaterial").append("svg:svg");
     CheckMaterial=checkMaterial;
     Material=material;
     filterAll(CheckMaterial);
