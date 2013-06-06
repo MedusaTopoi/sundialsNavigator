@@ -57,7 +57,7 @@ function filterAll()
 	    //full trigger-------------------------------------------------
 	    if((CheckMaterial[d]!=-1 && CheckDatum[d]!=-1 && CheckTyp[d]!=-1
 		&& CheckMaterial[d]==CheckDatum[d] &&  CheckMaterial[d]==CheckTyp[d]))
-		{filterdata.push(data[d]);
+		{filterdata.push(data[d].ID);
 		SundialsListCtrl(filterdata);
 		} 
 	};
