@@ -4,7 +4,7 @@ var CheckTyp=[];
 var Material=[];
 var Datum=[];
 var Typ=[];
-var Filterdata=[];
+var Filterdata={};
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
@@ -74,8 +74,6 @@ function filterAll()
     SundialsListCtrl(Filterdata);
     	
 };
-
-
 function SundialsListCtrl($scope, $http, Filterdata) {
 	alert("new table: "+Filterdata.length)
     $http.get('Filterdata').success(function (data) {
