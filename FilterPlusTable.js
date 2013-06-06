@@ -4,7 +4,7 @@ var Material=[];
 var Datum=[];
 var Typ=[];
 var CheckMaterial=[];
-//var filterdata=[{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
+
 var filterdata=[];
 
 function filterLogicMaterial(checkMaterial,data, material)
@@ -44,6 +44,9 @@ function filterAll()
   
     for(var d=0;d<528; d++)
   {
+  	
+  	    filterdata.push({"ID":data[d].ID, "dating":data[d].dating});
+  	
 	    //single trigger-------------------------------------------------
 	    if(CheckDatum[d]!=-1) {filterDatum.push(data[d]);}
 	    if(CheckMaterial[d]!=-1) {filterMaterial.push(data[d]);}
@@ -76,6 +79,7 @@ function filterAll()
 };
 
 function SundialsListCtrl($scope) {
-        $scope.sundials = {"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"};
+        //$scope.sundials = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
+   	$scope.sundials = filterdata;
    };
 
