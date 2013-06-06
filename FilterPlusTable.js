@@ -5,8 +5,6 @@ var Datum=[];
 var Typ=[];
 var CheckMaterial=[];
 
-//var Filterdata=[{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];               ;
-
 function filterLogicMaterial(checkMaterial,data, material)
 {
     
@@ -76,7 +74,7 @@ function filterAll()
     	
 };
 
-function SundialsListCtrl($scope, $http) {
+function SundialsListCtrl($scope) {
 
     //$http.get('https://dl.dropboxusercontent.com/u/103327358/file1.json').success(function (data) {
         $scope.sundials = filterdata;
