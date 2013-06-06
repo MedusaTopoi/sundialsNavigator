@@ -31,7 +31,7 @@ function filterLogicTyp(checkTyp,data, typ)
     filterAll(CheckTyp);
 
 };
-function filterAll()
+function filterAll($scope)
 {
     var filterdata=[];
     var filterDatum=[];
