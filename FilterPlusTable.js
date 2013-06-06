@@ -71,6 +71,7 @@ function filterAll()
     console.log("Typ:("+Typ+") & Material("+Material+"): "+filterTypMaterial.length);
     console.log("Material("+Material+") & Datum("+Datum+"): "+filterDatumMaterial.length);
     console.log("Datum("+Datum+") & Typ("+Typ+"): "+filterDatumTyp.length);
+    alert(" function "+filterdata.length)
     SundialsListCtrl(filterdata);
 };
 
@@ -78,7 +79,7 @@ function filterAll()
 
 function SundialsListCtrl($scope) {
 
-	alert("start function "+filterdata.length)
+	
     //$http.get('https://dl.dropboxusercontent.com/u/103327358/file1.json').success(function (data) {
         $scope.sundials = filterdata;
     //});
