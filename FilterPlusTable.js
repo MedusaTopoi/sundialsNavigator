@@ -5,6 +5,7 @@ var Datum=[];
 var Typ=[];
 var CheckMaterial=[];
 var filterdata;
+var Filterdata;
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
@@ -75,17 +76,17 @@ function filterAll($scope)
     	console.log("Material("+Material+") & Datum("+Datum+"): "+filterDatumMaterial.length);
     	console.log("Datum("+Datum+") & Typ("+Typ+"): "+filterDatumTyp.length);
     
-    	//filterdata.push({"ID":data[0].ID, "dating":data[0].dating});
+    	filterdata.push({"ID":data[0].ID, "dating":data[0].dating});
 
 };
 
         //filterdata = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
-	filterdata.push({"ID":data[0].ID, "dating":data[0].dating});
+	Filterdata=filterdata;
 
 
 	function SundialsListCtrl($scope) {
-	alert("laenge: "+filterdata.length);
-	$scope.sundials = filterdata;
+	alert("laenge: "+Filterdata.length);
+	$scope.sundials = Filterdata;
    
    };
 
