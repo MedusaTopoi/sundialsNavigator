@@ -72,12 +72,12 @@ function filterAll()
     console.log("Typ:("+Typ+") & Material("+Material+"): "+filterTypMaterial.length);
     console.log("Material("+Material+") & Datum("+Datum+"): "+filterDatumMaterial.length);
     console.log("Datum("+Datum+") & Typ("+Typ+"): "+filterDatumTyp.length);
-    SundialsListCtrl(Filterdata);
+    	alert("new table: "+Filterdata.length);
     	
 };
 
 function SundialsListCtrl($scope, $http, Filterdata) {
-	alert("new table: "+Filterdata.length)
+
     $http.get(Filterdata).success(function (data) {
         $scope.sundials = data;
     });
