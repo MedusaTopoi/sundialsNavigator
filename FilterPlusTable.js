@@ -7,6 +7,13 @@ var CheckMaterial=[];
 var filterdata;
 var Filterdata;
 
+
+function SundialsListCtrl($scope) {
+		alert("laenge: "+filterdata.length);
+		$scope.sundials = filterdata;
+	};	
+
+
 function filterLogicMaterial(checkMaterial,data, material)
 {
     
@@ -79,14 +86,8 @@ function filterAll()
         //filterdata.push({"ID":data[0].ID, "dating":data[0].dating});
 	
 //};
-
-        
+        SundialsListCtrl(filterdata);
 	//Filterdata=filterdata;
 
-
-	function SundialsListCtrl($scope) {
-	alert("laenge: "+filterdata.length);
-	$scope.sundials = filterdata;
-	};
    };
 
