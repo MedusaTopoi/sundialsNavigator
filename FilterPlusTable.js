@@ -4,6 +4,7 @@ var CheckTyp=[];
 var Material=[];
 var Datum=[];
 var Typ=[];
+var Filterdata=[];
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
@@ -55,12 +56,11 @@ function filterAll()
 	    //full trigger-------------------------------------------------
 	    if((CheckMaterial[d]!=-1 && CheckDatum[d]!=-1 && CheckTyp[d]!=-1
 		&& CheckMaterial[d]==CheckDatum[d] &&  CheckMaterial[d]==CheckTyp[d]))
-		{filterdata.push(data[d]);} 
+		{filterdata.push(data[d]);
+		} 
 	};
     
-   
-   
-   
+    Filterdata=filterdata;
     console.log("neuer Filter++++++++++++++++++");
     console.log("Laenge der SundialsDatenbank im Filter: "+data.length);
     console.log("gesamter Filter (Material,Typ,Datum): "+filterdata.length);
@@ -75,8 +75,8 @@ function filterAll()
 
 
 function SundialsListCtrl($scope, $http) {
-	alert("new table: "+filterdata)
-    $http.get('filterdata').success(function (data) {
+	alert("new table: "+Filterdata.length)
+    $http.get('filterdata.json').success(function (data) {
         $scope.sundials = data;
     });
 }
