@@ -1,4 +1,4 @@
-function typSelection()
+function typSelection(data)
 {
 
 //$('#filterTyp').show();
