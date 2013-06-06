@@ -4,7 +4,7 @@ var CheckTyp=[];
 var Material=[];
 var Datum=[];
 var Typ=[];
-var Filterdata=[{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];               ;
+Filterdata.json=[{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];               ;
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
@@ -78,7 +78,7 @@ function filterAll()
 
 function SundialsListCtrl($scope, $http, Filterdata) {
 	alert("new table: "+Filterdata.length)
-    $http.get('Filterdata').success(function (data) {
+    $http.get('Filterdata.json').success(function (data) {
         $scope.sundials = data;
     });
 }
