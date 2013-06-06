@@ -83,6 +83,6 @@ function SundialsListCtrl($scope) {
 	
         filterdata = [{"ID":"1","dating":"1st cent. CE","material":"marble ","dialface_shape":"sphere","site":"Altino","location":"Altino"}];
    	alert("filterdata "+filterdata);
-   	//$scope.sundials = filterdata;
+   	$scope.sundials = filterdata;
    };
 
