@@ -4,7 +4,7 @@ var CheckTyp=[];
 var Material=[];
 var Datum=[];
 var Typ=[];
-var filterdata=[];
+var Filterdata=[];
 
 function filterLogicMaterial(checkMaterial,data, material)
 {
@@ -71,14 +71,14 @@ function filterAll()
     console.log("Typ:("+Typ+") & Material("+Material+"): "+filterTypMaterial.length);
     console.log("Material("+Material+") & Datum("+Datum+"): "+filterDatumMaterial.length);
     console.log("Datum("+Datum+") & Typ("+Typ+"): "+filterDatumTyp.length);
-    SundialsListCtrl(filterdata);
+    SundialsListCtrl(Filterdata);
     	
 };
 
 
 function SundialsListCtrl($scope, $http) {
-	alert("new table: "+filterdata.length)
-    $http.get('filterdata').success(function (data) {
+	alert("new table: "+Filterdata.length)
+    $http.get('Filterdata').success(function (data) {
         $scope.sundials = data;
     });
 }
