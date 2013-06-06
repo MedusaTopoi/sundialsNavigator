@@ -57,8 +57,8 @@ function filterAll()
 	    //full trigger-------------------------------------------------
 	    if((CheckMaterial[d]!=-1 && CheckDatum[d]!=-1 && CheckTyp[d]!=-1
 		&& CheckMaterial[d]==CheckDatum[d] &&  CheckMaterial[d]==CheckTyp[d]))
-		{filterdata.push(data[d].ID);
-		SundialsListCtrl(filterdata);
+		{filterdata.push(data[d]);
+		
 		} 
 	};
     
@@ -71,8 +71,10 @@ function filterAll()
     console.log("Typ:("+Typ+") & Material("+Material+"): "+filterTypMaterial.length);
     console.log("Material("+Material+") & Datum("+Datum+"): "+filterDatumMaterial.length);
     console.log("Datum("+Datum+") & Typ("+Typ+"): "+filterDatumTyp.length);
-    	
+    SundialsListCtrl(filterdata);
 };
+
+
 
 function SundialsListCtrl($scope) {
 
