@@ -57,11 +57,11 @@ function filterAll()
 	    if((CheckMaterial[d]!=-1 && CheckDatum[d]!=-1 && CheckTyp[d]!=-1
 		&& CheckMaterial[d]==CheckDatum[d] &&  CheckMaterial[d]==CheckTyp[d]))
 		{filterdata.push(data[d]);
-		
+		Filterdata.push({ID: data[d].ID, dating: data[d].dating, material: data[d].material,
+		dialface_shape: data[d].dialface_shape, site: data[d].site, location: data[d].location});		
 		} 
 	};
     
-    Filterdata=filterdata;
     console.log("neuer Filter++++++++++++++++++");
     console.log("Laenge der SundialsDatenbank im Filter: "+data.length);
     console.log("gesamter Filter (Material,Typ,Datum): "+filterdata.length);
@@ -74,6 +74,7 @@ function filterAll()
     SundialsListCtrl(Filterdata);
     	
 };
+
 function SundialsListCtrl($scope, $http, Filterdata) {
 	alert("new table: "+Filterdata.length)
     $http.get('Filterdata').success(function (data) {
