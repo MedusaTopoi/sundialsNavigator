@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!--<!DOCTYPE html>-->
+<html>
+<meta charset="UTF-8">
+<head>
+<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/103327358/jquery.min.js"></script>
+<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/103327358/d3.v3.js"></script>
+<script src="https://dl.dropboxusercontent.com/u/103327358/crossfilter.js"></script>
+ 
+<!--######################################-->
+<!--hier der Aufruf der Javascripte      #-->
+<!--######################################-->
+ 
+<script src="https://dl.dropboxusercontent.com/u/103327358/Material.js"></script>
+<script src="https://dl.dropboxusercontent.com/u/103327358/Filter.js"></script>
+<script src="https://dl.dropboxusercontent.com/u/103327358/Datum.js"></script>
+<script src="https://dl.dropboxusercontent.com/u/103327358/Typ.js"></script>
+ 
+<style>
+<!--svg {
+border: solid 1px #ccc;
+font: 10px sans-serif;
+shape-rendering: crispEdges;
+}-->
+</style>
+</head>
+<div id="filter"></div>
+ 
+<!--####################################################-->
+<!--hier der Aufruf der Identifizierung                #-->
+<!--####################################################-->
+ 
+<div id="typ"></div><div id="typ"></div>
+<div id="datum"></div><div id="datum"></div>
+<div id="material"></div><div id="material"></div>
+<div id="simpleTable"></div><div id="simpleTable"></div>
+<div id="simpleMap"></div><div id="simpleMap"></div>
+<div id="filterLogikMaterial"></div><div id="filterLogikMaterial"></div>
+<div id="filterLogikDatum"></div><div id="filterLogikDatum"></div>
+ 
+<!--####################################################-->
+<!--Hier das eigentliche Script                        #-->
+<!--####################################################-->
+ 
+<script type="text/javascript">
+var data;
+/////////////////////////////////
+//HIER DIE FIXEN GROESSEN      //
+/////////////////////////////////
+//############################################
+//lade die Daten                             #
+//############################################
+d3.json("https://dl.dropboxusercontent.com/u/103327358/file1.json", function(json) {
+data=json;
+ 
+/////////////////////////////////
+//HIER DIE DYNAMISCHEN GROESSEN//
+/////////////////////////////////
+//############################################
+//definiere die Filterlogik und die Ausgabe  #
+//############################################
+datumSelection(data);
+materialSelection(data);
+typSelection(data);
+});
+ 
+</script>
+</html>
